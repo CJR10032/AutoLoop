@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.konomi.autoloop.MainActivity">
+
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.konomi.autoloop.widget.banner.AutoLoopView
+            android:id="@+id/loopView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_01"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/container"
+        android:layout_marginLeft="21.82dp"
+        android:layout_marginRight="21.82dp"
+        android:layout_marginTop="21.82dp"
+        android:gravity="center"
+        android:text="清空"
+        android:textColor="#000"
+        android:textSize="15.64sp"/>
+
+    <Button
+        android:id="@+id/btn_02"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/btn_01"
+        android:layout_marginLeft="21.82dp"
+        android:layout_marginRight="21.82dp"
+        android:layout_marginTop="21.82dp"
+        android:gravity="center"
+        android:text="添加一组数据"
+        android:textColor="#000"
+        android:textSize="15.64sp"/>
+</RelativeLayout>
